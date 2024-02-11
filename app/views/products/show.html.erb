@@ -3,7 +3,7 @@
 <ul>
     <li>
         <span>Price: </span>
-        <span><%= @product.price %></span>
+        <span><%= number_with_precision(@product.price, precision: 2) %></span>
     </li>
     <li>
         <span>Description: </span>
