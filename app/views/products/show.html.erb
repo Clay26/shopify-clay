@@ -10,3 +10,10 @@
         <span><%= @product.description %></span>
     </li>
 </ul>
+
+<ul>
+    <li><%= link_to "Destroy", product_path(@product), data: {
+                turbo_method: :delete,
+                turbo_confirm: "Are you sure?"
+                } %></li>
+</ul>
