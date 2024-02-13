@@ -12,6 +12,12 @@
     </li>
 </ul>
 
+<h2>Reviews</h2>
+<%= render @product.reviews %>
+
+<h2>Add a Review</h2>
+<%= render 'reviews/form' %>
+
 <ul>
     <li><%= link_to "Edit", edit_product_path(@product) %></li>
     <li><%= link_to "Destroy", product_path(@product), data: {

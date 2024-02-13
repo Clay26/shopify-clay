@@ -1,0 +1,20 @@
+<%= form_with model: [ @product, @product.reviews.build ] do |form| %>
+    <div>
+        <%= form.label :commenter %><br>
+        <%= form.text_field :commenter %>
+    </div>
+
+    <div>
+        <%= form.label :title %><br>
+        <%= form.text_field :title %>
+    </div>
+
+    <div>
+        <%= form.label :body %><br>
+        <%= form.text_area :body %>
+    </div>
+
+    <div>
+    <%= form.submit %>
+    </div>
+<% end %>
